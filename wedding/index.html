@@ -22,6 +22,10 @@
 		<meta property="og:description" content="2022년 5월 15일 일요일 12시 그랜드하얏트 호텔, 그랜드 볼룸" />
 
     </head>
+
+	
+
+
     <body style="font-family: 'Noto Sans KR', sans-serif;">
 
 				
@@ -39,7 +43,7 @@
 					<li><a href="#parents" class="inner-link" target="default">parents</a></li>
 					<li><a href="#gallery" class="inner-link" target="default">gallery</a></li>
 					<li><a href="#weddingvenue" class="inner-link" target="default">wedding venue</a></li>
-					<li><a href="#rsvp" class="inner-link" target="default">rsvp</a></li>
+					<li><a href="#information" class="inner-link" target="default">information</a></li>
 				</ul>
 				<div class="mobile-toggle">
 					<div class="line-1"></div>
@@ -226,7 +230,7 @@
 
 						<div class="col-sm-12 text-center feature">
 
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.787237832605!2d126.9966932979166!3d37.53946824096037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3b2ce104d9b%3A0x29245075a97761ae!2sGrand%20Hyatt%20Seoul!5e0!3m2!1sko!2skr!4v1650004602617!5m2!1sko!2skr" width="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2778.787237832605!2d126.9966932979166!3d37.53946824096037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3b2ce104d9b%3A0x29245075a97761ae!2sGrand%20Hyatt%20Seoul!5e0!3m2!1sko!2skr!4v1650004602617!5m2!1sko!2skr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 
 						</div>
@@ -237,70 +241,64 @@
 			</section>
 
 			
-			<a id="rsvp" class="in-page-link"></a>
+			<a id="information" class="in-page-link"></a>
 			
+			<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
 			<section class="rsvp rsvp-2">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h1>Say you'll be there</h1>
+						<div class="col-sm-12 text-center feature">
+							<h1>Information</h1>
 							<p>
-								Please let us know if you can make it by<br> July 10th at the latest, preesh!
+								코로나 등으로 인해 <span style = "display: block;">
+								참석 못하시는 분들의 요청으로 </span> <span style = "display: block;">
+								부득이하게 계좌번호 올려드림을 </span>
+								널리 양해 부탁드립니다.
 							</p>
 						</div>
 					</div>
-				
+
+
 					<div class="row">
-						<div class="col-sm-12 text-center">
-							<div class="form-wrapper">
-								<form class="form-email">
-									<div class="form-section">
-										<input type="text" name="name" class="validate-required" placeholder="Your Name / Names">
-										<div class="radio-group">
-											<div class="radio-holder btn checked">
-												<span>Can't Wait</span>
-												<input type="radio" name="rsvp" value="attending" checked="checked">
-											</div>
-											<div class="radio-holder btn">
-												<span>Can't Come</span>
-												<input type="radio" name="rsvp" value="not-attending">
-											</div>
-										</div>
-									</div>
-									<div class="form-section">
-										<h6>Meal Preference</h6>
-										<div class="radio-group">
-											<div class="radio-holder naked checked">
-												<span>Chicken</span>
-												<input type="radio" name="meal" value="chicken" checked="checked">
-											</div>
-											<div class="radio-holder naked">
-												<span>Beef</span>
-												<input type="radio" name="meal" value="beef">
-											</div>
-											<div class="radio-holder naked">
-												<span>Veg / GF</span>
-												<input type="radio" name="meal" value="veg-gf">
-											</div>
-										</div>
-									</div>
-									<div class="form-section">
-										<input type="text" name="song" placeholder="Any Song Requests?">
-									</div>
-									<input type="submit" value="RSVP">
-									<div class="form-error">
-										<span>Please fill out all fields</span>
-									</div>
-									<div class="form-success">
-										<span>Thanks for your RSVP!</span>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
+
+				        <div class="col-sm-12 text-center menu">
+				            <a class='btn'>
+								<span>1111</span>
+							</a>
+				            <div class="hide">
+				                <p>메뉴1-1</p>
+				            </div>
+				        </div>
+
+				        <div class="col-sm-12 text-center menu">
+				            <a class='btn'>
+								<span>1111</span>
+							</a>
+				            <div class="hide">
+				                <p>메뉴1-1</p>
+				            </div>
+				        </div>
+
+
+
+					</div>	
 				</div>
 			</section>
 
+
+			<script>
+			    // html dom 이 다 로딩된 후 실행된다.
+			    $(document).ready(function(){
+			        // memu 클래스 바로 하위에 있는 a 태그를 클릭했을때
+			        $(".menu>a").click(function(){
+			            // 현재 클릭한 태그가 a 이기 때문에
+			            // a 옆의 태그중 ul 태그에 hide 클래스 태그를 넣던지 빼던지 한다.
+			            $(this).next("div").toggleClass("hide");
+			        });
+			    });
+			</script>
 
 
 			

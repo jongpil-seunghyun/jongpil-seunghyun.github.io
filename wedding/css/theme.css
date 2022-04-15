@@ -321,6 +321,9 @@ a:active {
   text-decoration: none;
   cursor: pointer !important;
 }
+.hide {
+  display:none;
+}
 .btn {
   border: 1px solid #75c5b1;
   color: #75c5b1;
