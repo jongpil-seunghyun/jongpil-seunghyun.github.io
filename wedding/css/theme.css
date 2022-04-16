@@ -61,6 +61,15 @@ img {
 ul {
   list-style: none;
 }
+
+hr.style-four {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+    margin-right: 0;
+}
+
+
 /*!---------- MIXINS ----------*/
 .v-align {
   position: relative;
@@ -755,8 +764,14 @@ nav.light.scrolled .line-3 {
   margin-bottom: 20px;
 }
 .story-1 h6 {
-  margin-bottom: 60px;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   color: #75c5b1;
+}
+.story-1 p {
+  font-size: 15px;
+  margin-bottom: 30px;
 }
 .story-1 img {
   margin-bottom: 20px;
@@ -929,6 +944,9 @@ nav.light.scrolled .line-3 {
   margin-bottom: 20px;
 }
 .details-3 .feature {
+  margin-bottom: 60px;
+}
+.details-3 h2 {
   margin-bottom: 60px;
 }
 @media all and (max-width: 767px) {
